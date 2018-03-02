@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bibliotecas/bootstrap/css/bootstrap.min.css">
+    <!-- fonte -->
+    <link rel="stylesheet" type="text/css" href="bibliotecas/font-awesome/css/font-awesome.min.css">
+    <!-- tema -->
+    <link rel="stylesheet" type="text/css" href="css/sb-admin.min.css">
+</head>
+<!-- background dark -->
+
+<body class="bg-dark">
+
+    <div class="container">
+        <!-- card para login -->
+        <div class="card card-login mx-auto mt-5">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <form>
+                    <!-- email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <!-- senha -->
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite sua senha">
+                    </div>
+                    <!-- salvar senha -->
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">Lembrar minha senha
+                            </label>
+                        </div>
+                    </div>
+                    <!-- botão -->
+                    <!-- btn-block usa todo os espaço disponivel -->
+                    <button type="" class="btn btn-primary btn-block">Entrar no sistema</button>
+                    <div class="text-center">
+                        <!-- d-block usa todo o espaço -->
+                        <!-- mt-3 margem top 3, usado somente no primeior pois queremos que o segundo fique sempre colado -->
+                        <a href="#" class="d-block small mt-3">Criar uma conta</a>
+                        <a href="#" class="d-block small">Esqueci minha senha</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jquery -->
+    <script src="bibliotecas/jquery/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- biblioteca necessária -->
+    <script src="bibliotecas/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>

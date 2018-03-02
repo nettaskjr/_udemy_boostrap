@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Básico</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- referencia para os icones iconic -->
+    <link href="iconic/font/css/open-iconic.css" rel="stylesheet">
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+
+        /* definindo o tamanho do icones, uma vez que está como SVG */
+
+        .icon {
+            width: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- inserindo icone SVG-->
+                <button class="btn btn-secondary">
+                    <img src="iconic/svg/key.svg" alt="Icone Chave" class="icon">Chave
+                </button>
+                <img src="iconic/svg/key.svg" alt="Icone Chave" class="icon">
+                <button class="btn btn-secondary">
+                    <img src="iconic/svg/pie-chart.svg" alt="Icone Gráfico" class="icon">Gráfico
+                </button>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="btn btn-primary">
+                            <span class="oi" data-glyph="video" title="icon name" aria-hidden="true"> Video</span>
+                        </div>
+                        <div class="btn btn-warning">
+                            <span class="oi" data-glyph="video" title="icon name" aria-hidden="true"> Video</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <span class="oi" data-glyph="icon-name" title="icon name" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

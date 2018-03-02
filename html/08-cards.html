@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+    <style type="text/css">
+        .row {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="cards-body">
+                        Este é um texto dentro do corpo do cartão
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 20rem;">
+                    <div class="cards-body">
+                        <!-- Titulo -->
+                        <h4 class="card-title">Titulo do cartão</h4>
+                        <!-- Subtitulo -->
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                        <!-- Texto -->
+                        <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix
+                            no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat
+                            instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                        </p>
+                        <a href="#" class="card-link">Link do cartão</a>
+                        <a href="#" class="card-link">Outro do cartão</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- imagem no cartão -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/bg.jpg" class="card-img-top">
+                    <div class="cards-body">
+                        <!-- Titulo -->
+                        <h4 class="card-title">Titulo do cartão</h4>
+                        <!-- Subtitulo -->
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                        <!-- Texto -->
+                        <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix
+                            no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat
+                            instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                        </p>
+                        <a href="#" class="card-link">Link do cartão</a>
+                        <a href="#" class="card-link">Outro do cartão</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista no card -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 20rem;">
+                    <!-- Lista não ordenada -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item da lista 1</li>
+                        <li class="list-group-item">Item da lista 2</li>
+                        <li class="list-group-item">Item da lista 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- imagem no cartão -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/bg.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <!-- Titulo -->
+                        <h4 class="card-title">Titulo do cartão</h4>
+                        <!-- Subtitulo -->
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                        <!-- Texto -->
+                        <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix
+                            no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat
+                            instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item da lista 1</li>
+                        <li class="list-group-item">Item da lista 2</li>
+                        <li class="list-group-item">Item da lista 3</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do cartão</a>
+                        <a href="#" class="card-link">Outro do cartão</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card com cabeçalho utilizando toda a linha (12)-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card com cabeçalho utilizando toda a com imagem abaixo-->
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <img src="img/bg.jpg" class="card-img-bottom">
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- bg borda, text-white texto em branco -->
+                <div class="card bg-dark text-white">
+                    <img src="img/bg.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="card-title">
+                            Título do Cartão
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix
+                            no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat
+                            instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card com fundos-->
+        <div class="row">
+            <!-- cor azul -->
+            <div class="col-4">
+                <div class="card text-white bg-primary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+            <!-- cor cinza -->
+            <div class="col-4">
+                <div class="card text-white bg-secondary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+            <!-- cor verde -->
+            <div class="col-4">
+                <div class="card text-white bg-success">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor vermelho -->
+            <div class="col-4">
+                <div class="card text-white bg-danger">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor amarelo -->
+            <div class="col-4">
+                <div class="card text-white bg-warning">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor ciano -->
+            <div class="col-4">
+                <div class="card text-white bg-info">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor branca -->
+            <div class="col-4">
+                <div class="card bg-light">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor preeto -->
+            <div class="col-4">
+                <div class="card text-white bg-dark">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Card com bordas coloridas-->
+        <div class="row">
+            <!-- cor azul -->
+            <div class="col-4">
+                <div class="card border-primary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body text-primary">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+            <!-- cor cinza -->
+            <div class="col-4">
+                <div class="card border-secondary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+            <!-- cor verde -->
+            <div class="col-4">
+                <div class="card border-success">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor vermelho -->
+            <div class="col-4">
+                <div class="card border-danger">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor amarelo -->
+            <div class="col-4">
+                <div class="card border-warning">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor ciano -->
+            <div class="col-4">
+                <div class="card border-info">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor branca -->
+            <div class="col-4">
+                <div class="card border-light">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+
+            <!-- cor preeto -->
+            <div class="col-4">
+                <div class="card border-dark">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <div class="card-title">
+                                Título do Cartão
+                            </div>
+                        </h4>
+                        <p class="card-text">Conteúdo auxiliar do cartão</p>
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Há 2 dias
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo de cartóes espaço pequeno entre eles -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card-group">
+                    <!-- cartão 1 -->
+                    <div class="card">
+                        <img src="img/bg.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- cartao 2 -->
+                    <div class="card">
+                        <img src="img/bg1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- cartão 3 -->
+                    <div class="card">
+                        <img src="img/bg2.png" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Deck de cartóes espaço maior entre eles -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card-deck">
+                    <!-- cartão 1 -->
+                    <div class="card">
+                        <img src="img/bg.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- cartao 2 -->
+                    <div class="card">
+                        <img src="img/bg1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- cartão 3 -->
+                    <div class="card">
+                        <img src="img/bg2.png" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Colunas de cartões em formato de Z-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card-columns">
+                    <!-- cartão 1 -->
+                    <div class="card">
+                        <img src="img/bg.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="card border-info">
+                        <div class="card-header">
+                            Destaque
+                        </div>
+                        <div class="card-body">
+                            <h4>
+                                <div class="card-title">
+                                    Título do Cartão
+                                </div>
+                            </h4>
+                            <p class="card-text">Conteúdo auxiliar do cartão</p>
+                            <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Há 2 dias
+                        </div>
+                    </div>
+
+                    <!-- cartao 2 -->
+                    <div class="card">
+                        <img src="img/bg1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- cartão 3 -->
+                    <div class="card">
+                        <img src="img/bg2.png" class="card-img-top">
+                        <div class="card-body">
+                            <!-- Titulo -->
+                            <h4 class="card-title">Titulo do cartão</h4>
+                            <!-- Subtitulo -->
+                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo do cartão</h6>
+                            <!-- Texto -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum
+                                fastidii at vix. Nobis quaestio te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae,
+                                vix no copiosae gubergren. Offendit tincidunt complectitur sea cu, brute fuisset his ad,
+                                vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus senserit aliquando
+                                ei usu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            Destaque
+                        </div>
+                        <div class="card-body">
+                            <h4>
+                                <div class="card-title">
+                                    Título do Cartão
+                                </div>
+                            </h4>
+                            <p class="card-text">Conteúdo auxiliar do cartão</p>
+                            <a href="#" class="btn btn-primary">Ir para algum lugar</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Há 2 dias
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

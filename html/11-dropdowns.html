@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdowns</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- com botão -->
+        <div class="row">
+            <div class="col-12">
+                <div class="dropdown">
+                    <button id="button1" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                    <div class="dropdown-menu" aria-labelledby="button1">
+                        <a href="#" class="dropdown-item">Link1</a>
+                        <a href="#" class="dropdown-item">Link2</a>
+                        <a href="#" class="dropdown-item">Link3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- com link -->
+        <div class="row">
+            <div class="col-12">
+                <div class="dropdown">
+                    <a href="#" id="button2" class="btn btn-primary dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Link Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="button2">
+                        <!-- Cabeçalho do dropbox "opcional" -->
+                        <h6 class="dropdown-header">Cabeçalho</h6>
+                        <a href="#" class="dropdown-item">Link1</a>
+                        <!-- item com a aparência de desativado, para desativar tem que trabalhar no código -->
+                        <a href="#" class="dropdown-item disabled">Link2</a>
+                        <a href="#" class="dropdown-item">Link3</a>
+                        <!-- separador de link -->
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Link Separado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

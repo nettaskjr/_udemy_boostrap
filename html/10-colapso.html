@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colpaso</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <!-- dispardor atrave de href -->
+                    <a href="#itemColapso1" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="ItemColapso1">Disparador HREF</a>
+                    <!-- disparador atraves de botão -->
+                    <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#itemColapso1" aria-expanded="false" aria-controls="itemColapso1">Disparador Button</button>
+                </p>
+                <div id="itemColapso1" class="collapse">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                        te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren. Offendit
+                        tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior. Vocent deserunt
+                        ullamcorper in eos, volumus senserit aliquando ei usu.
+                    </div>
+                    </card>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <!-- dispardor atrave de href -->
+                    <a href="#itemColapso2" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="ItemColapso2">Disparador HREF</a>
+                    <!-- disparador atraves de botão -->
+                    <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#itemColapso3" aria-expanded="false" aria-controls="itemColapso3">Disparador Button</button>
+                </p>
+                <div id="itemColapso2" class="collapse">
+                    <div class="card card-body">
+                        <h4>Item 2</h4>
+                        Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                        te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren. Offendit
+                        tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior. Vocent deserunt
+                        ullamcorper in eos, volumus senserit aliquando ei usu.
+                    </div>
+                    </card>
+                </div>
+                <div id="itemColapso3" class="collapse">
+                    <div class="card card-body">
+                        <h4>Item 3</h4>
+                        Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                        te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren. Offendit
+                        tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior. Vocent deserunt
+                        ullamcorper in eos, volumus senserit aliquando ei usu.
+                    </div>
+                    </card>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Efeito sanfona  -->
+        <h1>Efeito Sanfona a</h1>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- semântica -->
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <!-- Cartão 1 show deixa a mostra o texto-->
+                        <div class="card-header" role="tab" id="header1">
+                            <h5 class="mb-0">
+                                <a href="#colapso1" data-toggle="collapse" aria-expanded="true" aria-controls="colapso1">
+                                    Link para Colapso #1
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso1" class="collapse show" role="tabpanel" aria-labelledby="header1" data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item colapso #1</h5>
+                                Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                                te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren.
+                                Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior.
+                                Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                            </div>
+                        </div>
+                        <!-- Cartão 2 sem show e com aria-expanded=false-->
+                        <div class="card-header" role="tab" id="header2">
+                            <h5 class="mb-0">
+                                <a href="#colapso2" data-toggle="collapse" aria-expanded="false" aria-controls="colapso2">
+                                    Link para Colapso #2
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso2" class="collapse" role="tabpanel" aria-labelledby="header2" data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item colapso #2</h5>
+                                Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                                te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren.
+                                Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior.
+                                Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                            </div>
+                        </div>
+                        <!-- Cartão 3 sem show e com aria-expanded=false-->
+                        <div class="card-header" role="tab" id="header3">
+                            <h5 class="mb-0">
+                                <a href="#colapso3" data-toggle="collapse" aria-expanded="false" aria-controls="colapso3">
+                                    Link para Colapso #3
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso3" class="collapse" role="tabpanel" aria-labelledby="header3" data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item colapso #3</h5>
+                                Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                                te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren.
+                                Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior.
+                                Vocent deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

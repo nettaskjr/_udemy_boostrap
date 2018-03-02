@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagens</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- com col-3, deixamos a imagem fluida em 3 colunas e não na linha toda -->
+            <div class="col">
+                <!-- a classe img-fluid tem a função de deixar a imagem responsiva -->
+                <img src="img/bg.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-3">
+                    <!-- a classe img-thumbnail tem a função de criar o thumb da imagem
+                    lembre-se que não é necessário utilizar o img-fluid, pois o thumb
+                    já faz a fluidez da imagem -->
+                    <img src="img/bg.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col">
+                    <!-- use float-left para alinha a esquedar e float right para alinhar a direita -->
+                    <img src="img/bg2.png" class="img-fluid float-left">
+                </div>
+                <div class="col">
+                        <!-- use rounded para deixar as bordas arrendondadas -->
+                        <img src="img/bg2.png" class="img-fluid rounded float-right">
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="col">
+                    <!-- use mx-auto e d-block para centralizar a imagem -->
+                    <img src="img/bg2.png" class="img-fluid mx-auto d-block">
+                </div>
+        </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

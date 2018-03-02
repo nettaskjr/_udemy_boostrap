@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Básico</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- span antes -->
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon" id="input1">@</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de usuário" aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+            <!-- span depois -->
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de usuário" aria-label="Nome de Usuário" aria-describedby="input1">
+                    <span class="input-group-addon" id="input1">@seudominio.com.br</span>
+                </div>
+            </div>
+            <!-- span antes e depois  -->
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon" id="input1">R$</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de usuário" aria-label="Nome de Usuário" aria-describedby="input1">
+                    <span class="input-group-addon" id="input1">,00</span>
+                </div>
+            </div>
+            <!-- span dois antes  -->
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon" id="input1">R$</span>
+                    <span class="input-group-addon" id="input1">,00</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de usuário" aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+            <!-- input maior  -->
+            <div class="col-4">
+                <div class="input-group-lg">
+                    <span class="input-group-addon" id="input1">R$</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de usuário" aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox acompanhando">
+                    </span>
+                    <input type="text" class="form-control" aria-label="Input de texto acompanhando">
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="radio" aria-label="Checkbox acompanhando">
+                    </span>
+                    <input type="text" class="form-control" aria-label="Input de texto acompanhando">
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Pesquisar texto" aria-label="Input de texto acompanhando">
+                    <!-- para botão troque para input-group-btn -->
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary">Pesquisar</button>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

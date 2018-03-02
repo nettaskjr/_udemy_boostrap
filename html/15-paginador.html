@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paginador</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Proximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- anterior e proximo com links -->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">&laquo;</span>
+                                <!-- tecnologia assistidas -->
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">&raquo;</span>
+                                <!-- tecnologia assistidas -->
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- informando qual esta ativo e não ativo -->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination">
+                        <!-- não ativo -->
+                        <li class="page-item disable">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <!-- ativo -->
+                        <li class="page-item active">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Proximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- pequeno pagination-sm -->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Proximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- grande pagination-lg -->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Proximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- centralizado justify-content-center-->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Proximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- alinhado a direita justify-content-end -->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="paginador">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Proximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

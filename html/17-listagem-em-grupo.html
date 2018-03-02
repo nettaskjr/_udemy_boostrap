@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listagem em grupo</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- lista com lista não ordenada -->
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item">Item 1</li>
+                    <li class="list-group-item active">Item 2</li>
+                    <li class="list-group-item disabled">Item 3</li>
+                    <li class="list-group-item">Item 4</li>
+                    <li class="list-group-item">Item 5</li>
+                </ul>
+            </div>
+
+            <!-- Lista com links -->
+            <div class="col-4">
+                <div class="list-group">
+                    <!-- list-group-item-action deixa com estado bonito sem mostrac como link (azul) -->
+                    <a href="#" class="list-group-item active">Link 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 3</a>
+                    <a href="#" class="list-group-item list-group-item-actiondisabled">Link 4</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link 5</a>
+                </div>
+            </div>
+
+            <!-- Lista com botoes -->
+            <div class="col-4">
+                <div class="list-group">
+                    <!-- list-group-item-action deixa com estado bonito sem mostrac como link (azul) -->
+                    <button type="button" class="list-group-item list-group-item-action active">Botão 1</button>
+                    <button type="button" class="list-group-item list-group-item-action">Botão 2</button>
+                    <button type="button" class="list-group-item list-group-item-action">Botão 3</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Botão 4</button>
+                    <button type="button" class="list-group-item list-group-item-action">Botão 5</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- lista com cores -->
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Item 1</li>
+                    <li class="list-group-item list-group-item-secondary active">Item 2</li>
+                    <li class="list-group-item list-group-item-danger">Item 3</li>
+                    <li class="list-group-item list-group-item-success">Item 4</li>
+                    <li class="list-group-item list-group-item-warning">Item 5</li>
+                </ul>
+            </div>
+
+            <!-- Lista com links -->
+            <div class="col-4">
+                <div class="list-group">
+                    <!-- list-group-item-action deixa com estado bonito sem mostrac como link (azul) -->
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Link 1</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Link 2</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Link 3</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Link 4</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Link 5</a>
+                </div>
+            </div>
+
+            <!-- Lista com botoes -->
+            <div class="col-4">
+                <div class="list-group">
+                    <!-- list-group-item-action deixa com estado bonito sem mostrac como link (azul) -->
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-primary">Botão 1</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Botão 2</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-danger">Botão 3</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-success">Botão 4</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-warning">Botão 5</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rom">
+            <div class="col-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5>Título da minha lista</h5>
+                            <small>3 dias atrás</small>
+                        </div>
+                        <p mb-1>Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. </p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5>Título da minha lista</h5>
+                            <small>3 dias atrás</small>
+                        </div>
+                        <p mb-1>Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. </p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5>Título da minha lista</h5>
+                            <small>3 dias atrás</small>
+                        </div>
+                        <p mb-1>Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii
+                            at vix. Nobis quaestio te mea. </p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a href="#list-home" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" role="tab"
+                        aria-controls="home">Home</a>
+                    <a href="#list-perfil" class="list-group-item list-group-item-action" id="list-perfil-list" data-toggle="list" role="tab"
+                        aria-controls="perfil">Perfil</a>
+                    <a href="#list-contato" class="list-group-item list-group-item-action" id="list-contato-list" data-toggle="list" role="tab"
+                        aria-controls="contato">Contato</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- Home -->
+                    <div id="list-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="list-home-list">
+                        <h3>Home</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                            te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren.
+                            Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior. Vocent
+                            deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                        </p>
+                    </div>
+                    <!-- Perfil -->
+                    <div id="list-perfil" class="tab-pane fade" role="tabpanel" aria-labelledby="list-perfil-list">
+                        <h3>Perfil</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                            te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren.
+                            Offendit tincidunt complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior. Vocent
+                            deserunt ullamcorper in eos, volumus senserit aliquando ei usu.
+                        </p>
+                    </div>
+                    <!-- Formulário de contato -->
+                    <div id="list-contato" class="tab-pane fade" role="tabpanel" aria-labelledby="list-contato-list">
+                        <h3>Contato</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite assunto">
+                            </div>
+                            <div class="form-group">
+                                <label for="conteudo">Conteudo</label>
+                                <textarea class="form-control" id="conteudo" name="conteudo"></textarea>
+                            </div>                            
+                            <button class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

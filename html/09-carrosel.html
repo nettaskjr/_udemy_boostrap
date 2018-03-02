@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrosel</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col-12">
+                <div id="controleCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- botoe de acesso direto às imagens -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#controleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#controleCarousel" data-slide-to="1"></li>
+                        <li data-target="#controleCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- informa a imagem ativa -->
+                        <div class="carousel-item active">
+                            <!-- width 100% -->
+                            <img class="d-block w-100" src="img/bg.jpg" alt="" class="src">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Primeiro Titulo do slide</h3>
+                                <p>Subtitulo</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/bg1.jpg" alt="" class="src">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Segundo Titulo do slide</h3>
+                                <p>Subtitulo</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/bg2.png" alt="" class="src">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Terceiro Titulo do slide</h3>
+                                <p>Subtitulo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- botoes de navegação -->
+                    <a href="#controleCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                        <!-- insere o icone -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!-- tecnologia assitviva -->
+                        <span class="sr-only">Voltar</span>
+                    </a>
+                    <a href="#controleCarousel" class="carousel-control-next" role="button" data-slide="next">
+                        <!-- insere o icone -->
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!-- tecnologia assitviva -->
+                        <span class="sr-only">Avançar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- para mudar o intervalo entre as imagens  -->
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval:2000
+        })
+    </script>
+
+</body>
+
+</html>

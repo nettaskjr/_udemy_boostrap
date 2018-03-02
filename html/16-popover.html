@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popover</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- todo o texto do popover está em data-cotent -->
+                <button type="button" class="btn btn-lg btn-danger" data-toogle="popover" title="Título do popover" data-content="Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+                te mea.">
+                    Clique para abri o Popover
+                </button>
+            </div>
+        </div>
+
+        <!-- texto inserido para dar espaço para testar o poper acima -->
+        <p>
+            Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at vix. Nobis quaestio
+            te mea. Pri primis tamquam prodesset ne, usu ut laudem molestiae, vix no copiosae gubergren. Offendit tincidunt
+            complectitur sea cu, brute fuisset his ad, vim ex volutpat instructior. Vocent deserunt ullamcorper in eos, volumus
+            senserit aliquando ei usu.
+        </p>
+
+        <!-- mostra o poper acima data-placement="top" -->
+        <div class="row">
+            <div class="col-12">
+                <!-- todo o texto do popover está em data-cotent -->
+                <!-- para direcionar o poper use data-contaniner="body" -->
+                <button type="button" class="btn btn-secondary" data-container="body" data-toogle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at
+                vix. Nobis quaestio te mea.">
+                    Popover Top
+                </button>
+            </div>
+        </div>
+
+        <!-- mostra o poper abaixo data-placement="top" -->
+        <div class="row">
+            <div class="col-12">
+                <!-- todo o texto do popover está em data-cotent -->
+                <!-- para direcionar o poper use data-contaniner="body" -->
+                <button type="button" class="btn btn-secondary" data-container="body" data-toogle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at
+                        vix. Nobis quaestio te mea.">
+                    Popover Top
+                </button>
+            </div>
+        </div>
+   
+        <!-- mostra o poper esquerda data-placement="top" -->
+        <div class="row">
+            <div class="col-12">
+                <!-- todo o texto do popover está em data-cotent -->
+                <!-- para direcionar o poper use data-contaniner="body" -->
+                <button type="button" class="btn btn-secondary" data-container="body" data-toogle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet, te legere scriptorem eos. Mei at quis probatus quaestio, nibh illum fastidii at
+                        vix. Nobis quaestio te mea.">
+                    Popover Top
+                </button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- para utilizar o popover -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Utilizado para chamar o popover -->
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toogle="popover"]').popover()
+        })
+    </script>
+
+</body>
+
+</html>

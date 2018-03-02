@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Básico</title>
+    <!-- CSS do bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Opcional apenas para fins ditaticos, mostrando uma borda preta de 1 px e background amarelo suave  -->
+    <style type="text/css">
+        div.bg {
+            background-color: #ffe884;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- obrigatório inserir a div form-group dentro do form -->
+                <form>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="InputEmail1">Email</label>
+                        <!-- já possui validação de e-mail -->
+                        <input type="email" class="form-control" name="InputEmail1" id="InputEmail1" placeholder="Insira seu e-mail">
+                        <!-- texto informativo e pequeno -->
+                        <small id="emailHelp" class="form-text text-muted" aria-describedby="emailHelp">Ex.: seu e-mail@seudominio.com.br</small>
+                    </div>
+                    <!-- Senha -->
+                    <div class="form-group">
+                        <label for="InputSenha1">Senha</label>
+                        <input type="password" class="form-control" name="InputSenha1" id="InputSenha1" placeholder="Digite sua senha">
+                    </div>
+                    <!-- Somente leitura -->
+                    <div class="form-group">
+                        <label for="InputSenha2">Senha somente leitura</label>
+                        <input type="password" class="form-control" name="InputSenha2" id="InputSenha2" readonly placeholder="Digite sua senha">
+                    </div>
+                    <!-- check-box -->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"> Manter Conectado
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+        <!-- altura do text -->
+        <div class="row">
+            <div class="col-6">
+                <input type="text" class="form-control form-control-lg">
+                <input type="text" class="form-control">
+                <input type="text" class="form-control form-control-sm">
+
+            </div>
+        </div>
+
+        <!-- colocando em linha os texts -->
+        <div class="row">
+            <div class="col-12">
+                <!-- obrigatório inserir a div form-group dentro do form -->
+                <form>
+                    <!-- Email -->
+                    <!-- informe row, para dizer que estaram na mesma linha label + text -->
+                    <!-- col-sm, indica a quantidade de colunas -->
+                    <!-- col-form-label se adequa a celulares pequenos -->
+                    <div class="form-group row">
+                        <label for="InputEmail2" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <!-- não aceita nenhum tipo de iteração, aperece como se fosse label -->
+                            <!-- form-control-plaintext e readonly -->
+                            <!-- value=valor que deve ser mostrado -->
+                            <input type="email" class="form-control-plaintext" name="InputEmail2" id="InputEmail2" placeholder="Insira seu e-mail" value="meuemail@meudominio.com.br"
+                                readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="InputSenha3" class="col-sm-2 col-form-label">Senha</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" name="InputSenha3" id="InputSenha3" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- colocar o formulario em colunas (grid) -->
+        <div class="row">
+            <div class="col-12">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for "nome" class="col-form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-goup col-md-6">
+                            <label for "sobrenome" class="col-form-label">Sobrenome:</label>
+                            <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for "end" class="col-form-label">Endereço:</label>
+                        <input type="text" class="form-control" id="end" name="end" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for "cidade" class="col-form-label">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a cidade">
+                        </div>
+                        <div class="form-goup col-md-4">
+                            <label for "estado" class="col-form-label">Estado:</label>
+                            <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite seu estado">
+                        </div>
+                        <div class="form-goup col-md-2">
+                            <label for "cep" class="col-form-label">CEP:</label>
+                            <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite seu CEP">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- formulário inline ou seja em linha -->
+        <!-- tecnologia assistivas não seram utilizadas -->
+        <div class="row">
+            <div class="col-12">
+                <form action="" class="form-inline">
+                    <!-- sr-only para mostrar apenas em telas com acessibilidade -->
+                    <label class="sr-only" for="nameInline">Nome</label>
+                    <input type="text" id="nameInline" class="form-control mb-2 mr-2" placeholder="Digite seu nome" >
+                    <!-- sr-only para mostrar apenas em telas com acessibilidade -->
+                    <label class="sr-only" for="senhaInline">Senha</label>
+                    <input type="text" id="senhaInline" class="form-control mb-2 mr-2" placeholder="Digite sua senha">
+                    <button class="btn btn-primary">Entrar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts Locais para execução do bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
